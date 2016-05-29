@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style style="text/css">
+
+
+
+    div{
+        /* Styling */
+        max-width: 10em;
+        min-height: 5em;
+        padding: 10px;
+        color: white;
+        font: 100%/1 sans-serif;
+    }
+    /*
+    最新background-postion 扩展
+    */
+    .div-1 {
+        background: url(http://csssecrets.io/images/code-pirate.svg)
+        no-repeat bottom right #58a;
+        background-position: right 20px bottom 10px;
+    }
+    .div-2{
+
+        background: url(http://csssecrets.io/images/code-pirate.svg)
+        no-repeat bottom right #58a;
+        background-position: right 10px bottom 10px;
+    }
+/*background-origin
+默认以padding-box为准
+*/
+
+    .div-3 {
+        background: url(http://csssecrets.io/images/code-pirate.svg)
+        no-repeat bottom right #58a;
+        background-origin: content-box;
+    }
+
+/*
+calc()
+*/
+    .div-4 {
+        background: url(http://csssecrets.io/images/code-pirate.svg)
+        no-repeat bottom right #58a;
+        background-position: calc(100% - 10px) calc(100% - 10px);
+    }
+
+
+</style>
+<body>
+<div class="div-1">Code Pirate</div>
+<br>
+<div class="div-2">Code Pirate</div>
+<br>
+<div class="div-3">Code Pirate</div>
+<br>
+<div class="div-4">Code Pirate</div>
+
+
+</body>
+</html>
