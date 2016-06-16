@@ -12,4 +12,9 @@
     $('#txt').show(); // 仍然隐藏的状态
 </script>
 
-
+**2.data 方法兼容 data-name-11 写法**
+<input id="txt" type="text" value="" data-name-11="aa"/>
+<script>
+     // 3.0 版本 输出 {"name-11": aa}， 之前版本输出 {}
+    $('#txt').data()
+</script>
